@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TestDoublesTests\**" />
+    <EmbeddedResource Remove="TestDoublesTests\**" />
+    <None Remove="TestDoublesTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.16.0" />
+  </ItemGroup>
+
+</Project>
